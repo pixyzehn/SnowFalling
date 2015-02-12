@@ -12,6 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        var sfv: SnowFallingView = SnowFallingView(frame: CGRectMake(0, 0, view.frame.size.width*2, view.frame.size.height*2))
+        sfv.flakesCount = 400
+        view.addSubview(sfv)
+        sfv.letItSnow()
     }
 
 }
