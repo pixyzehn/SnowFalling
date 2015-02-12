@@ -9,19 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var sfv: SnowFallingView?
+    
+    enum State {
+        case Snowing
+        case Stoping
+    }
+    
+    var currentState: State = .Snowing
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.blackColor()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        var sfv: SnowFallingView = SnowFallingView(frame: CGRectMake(0, 0, view.frame.size.width*2, view.frame.size.height*2))
-        sfv.flakesCount = 400
-        view.addSubview(sfv)
-        sfv.letItSnow()
+        sfv = SnowFallingView(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
+        sfv?.flakesCount = 100
+        view.addSubview(sfv!)
+        sfv?.startSnow()
+        
+        // Triple tap action
+        var tripleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTripleTap")
+        tripleTap.numberOfTapsRequired = 3
+        view.addGestureRecognizer(tripleTap)
+    }
+    
+    func handleTripleTap() {
+        if currentState == .Snowing {
+            sfv?.stopSnow()
+            currentState = .Stoping
+        } else {
+            sfv?.startSnow()
+            currentState = .Snowing
+        }
     }
 
 }
