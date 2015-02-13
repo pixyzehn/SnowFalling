@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  SnowFalling
+//  SnowFalling-Sample
 //
-//  Created by pixyzehn on 2/10/15.
+//  Created by pixyzehn on 2/13/15.
 //  Copyright (c) 2015 pixyzehn. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     
     var currentState: State = .Snowing
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.blackColor()
@@ -28,14 +28,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         sfv = SnowFallingView(frame: CGRectMake(0, 0, view.frame.size.width * 2, view.frame.size.height * 2))
-        sfv?.flakeFileName        = "snowflake"
-        sfv?.flakesCount          = 100  // Default is 100.
-        sfv?.flakeWidth           = 40.0 // Default is 40.0
-        sfv?.flakeHeight          = 46.0 // Default is 46.0
-        sfv?.flakeMinimumSize     = 0.6  // Default is 0.4
-        sfv?.flakeMaximumSize     = 0.8  // Default is 0.8
-        sfv?.animationDurationMin = 6.0  // Default is 6.0
-        sfv?.animationDurationMax = 12.0 // Default is 12.0
+        sfv?.flakesCount = 100
         view.addSubview(sfv!)
         sfv?.startSnow()
         
@@ -54,6 +47,5 @@ class ViewController: UIViewController {
             currentState = .Snowing
         }
     }
-
+    
 }
-

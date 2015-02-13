@@ -8,10 +8,10 @@
 
 import UIKit
 
-let kDefaultFlakeFileName               = "snowflake"
 let kDefaultFlakesCount                 = 200
 let kDefaultFlakeWidth: Float           = 40.0
 let kDefaultFlakeHeight: Float          = 46.0
+let kDefaultFlakeFileName               = "snowflake"
 let kDefaultMinimumSize: Float          = 0.4
 let kDefaultMaximumSize: Float          = 0.8
 let kDefaultAnimationDurationMin: Float = 6.0
@@ -34,8 +34,8 @@ class SnowFallingView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         clipsToBounds             = true
-        self.flakeFileName        = kDefaultFlakeFileName
         self.flakesCount          = kDefaultFlakesCount
+        self.flakeFileName        = kDefaultFlakeFileName
         self.flakeWidth           = kDefaultFlakeWidth
         self.flakeHeight          = kDefaultFlakeHeight
         self.flakeMinimumSize     = kDefaultMinimumSize
