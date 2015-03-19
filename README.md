@@ -7,10 +7,15 @@ Snow Falling in Swift like a LINE for iOS on Dec 25.
 
 ![SnowFalling](https://github.com/pixyzehn/SnowFalling/blob/master/Assets/SnowFalling.gif)
 
-## Install
+##Installation
 
-Add the SnowFalling folder (including SnowFallingView.swift) in your project.
-Set the kDefaultFlakeFileName as an image file name.
+The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Add the following line to your Podfile:
+
+```ruby
+use_frameworks!
+# The following is a Library of Swift.
+pod 'SnowFalling'
+```
 
 Default values are as follows.
 
