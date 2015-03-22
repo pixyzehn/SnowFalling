@@ -12,9 +12,16 @@ Snow Falling in Swift like a LINE for iOS on Dec 25.
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Add the following line to your Podfile:
 
 ```ruby
+platform :ios, '8.0'
 use_frameworks!
 # The following is a Library of Swift.
 pod 'SnowFalling'
+```
+
+Then, run the following command:
+
+```ruby
+pod install
 ```
 
 Default values are as follows.

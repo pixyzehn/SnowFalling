@@ -8,30 +8,30 @@
 
 import UIKit
 
-let kDefaultFlakeFileName               = "snowflake"
-let kDefaultFlakesCount                 = 200
-let kDefaultFlakeWidth: Float           = 40.0
-let kDefaultFlakeHeight: Float          = 46.0
-let kDefaultMinimumSize: Float          = 0.4
-let kDefaultMaximumSize: Float          = 0.8
-let kDefaultAnimationDurationMin: Float = 6.0
-let kDefaultAnimationDurationMax: Float = 12.0
+public let kDefaultFlakeFileName               = "snowflake"
+public let kDefaultFlakesCount                 = 200
+public let kDefaultFlakeWidth: Float           = 40.0
+public let kDefaultFlakeHeight: Float          = 46.0
+public let kDefaultMinimumSize: Float          = 0.4
+public let kDefaultMaximumSize: Float          = 0.8
+public let kDefaultAnimationDurationMin: Float = 6.0
+public let kDefaultAnimationDurationMax: Float = 12.0
 
-class SnowFallingView: UIView {
+public class SnowFallingView: UIView {
     
-    var flakesCount: Int?
-    var flakeFileName: String?
-    var flakeWidth: Float?
-    var flakeHeight: Float?
-    var flakeMinimumSize: Float?
-    var flakeMaximumSize: Float?
+    public var flakesCount: Int?
+    public var flakeFileName: String?
+    public var flakeWidth: Float?
+    public var flakeHeight: Float?
+    public var flakeMinimumSize: Float?
+    public var flakeMaximumSize: Float?
     
-    var animationDurationMin: Float?
-    var animationDurationMax: Float?
+    public var animationDurationMin: Float?
+    public var animationDurationMax: Float?
     
-    var flakesArray: [UIImageView]?
+    public var flakesArray: [UIImageView]?
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         clipsToBounds             = true
         self.flakeFileName        = kDefaultFlakeFileName
@@ -44,11 +44,11 @@ class SnowFallingView: UIView {
         self.animationDurationMax = kDefaultAnimationDurationMax
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    func createFlakes() {
+    public func createFlakes() {
         flakesArray = [UIImageView]()
         var flakeImage: UIImage = UIImage(named: flakeFileName!)!
         for var i: Int = 0; i < flakesCount!; i++ {
@@ -74,7 +74,7 @@ class SnowFallingView: UIView {
         }
     }
     
-    func startSnow() {
+    public func startSnow() {
         if flakesArray? == nil {
             createFlakes()
         }
@@ -105,7 +105,7 @@ class SnowFallingView: UIView {
         }
     }
     
-    func stopSnow() {
+    public func stopSnow() {
         for v: UIImageView in flakesArray! {
             v.layer.removeAllAnimations()
         }
