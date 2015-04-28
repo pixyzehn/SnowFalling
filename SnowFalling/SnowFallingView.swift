@@ -8,14 +8,14 @@
 
 import UIKit
 
-public let kDefaultFlakeFileName               = "snowflake"
-public let kDefaultFlakesCount                 = 200
-public let kDefaultFlakeWidth: Float           = 40.0
-public let kDefaultFlakeHeight: Float          = 46.0
-public let kDefaultMinimumSize: Float          = 0.4
-public let kDefaultMaximumSize: Float          = 0.8
-public let kDefaultAnimationDurationMin: Float = 6.0
-public let kDefaultAnimationDurationMax: Float = 12.0
+public var kDefaultFlakeFileName               = "snowflake"
+public var kDefaultFlakesCount                 = 200
+public var kDefaultFlakeWidth: Float           = 40.0
+public var kDefaultFlakeHeight: Float          = 46.0
+public var kDefaultMinimumSize: Float          = 0.4
+public var kDefaultMaximumSize: Float          = 0.8
+public var kDefaultAnimationDurationMin: Float = 6.0
+public var kDefaultAnimationDurationMax: Float = 12.0
 
 public class SnowFallingView: UIView {
     
@@ -75,7 +75,8 @@ public class SnowFallingView: UIView {
     }
     
     public func startSnow() {
-        if flakesArray? == nil {
+        
+        if flakesArray == nil {
             createFlakes()
         }
         backgroundColor = UIColor.clearColor()
@@ -112,6 +113,4 @@ public class SnowFallingView: UIView {
         flakesArray = nil
     }
     
-    deinit {
-    }
 }
