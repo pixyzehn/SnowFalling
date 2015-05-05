@@ -13,6 +13,12 @@
 		6E08A8081A8D37DD00F6093C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E08A8071A8D37DD00F6093C /* Images.xcassets */; };
 		6E08A80B1A8D37DD00F6093C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E08A8091A8D37DD00F6093C /* LaunchScreen.xib */; };
 		6E08A8171A8D37DD00F6093C /* SnowFalling_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E08A8161A8D37DD00F6093C /* SnowFalling_SampleTests.swift */; };
+		6E4326071AF88F380004A547 /* SnowFalling.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4326061AF88F380004A547 /* SnowFalling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E43260D1AF88F380004A547 /* SnowFalling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4326021AF88F380004A547 /* SnowFalling.framework */; };
+		6E4326161AF88F380004A547 /* SnowFallingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4326151AF88F380004A547 /* SnowFallingTests.swift */; };
+		6E4326191AF88F380004A547 /* SnowFalling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4326021AF88F380004A547 /* SnowFalling.framework */; };
+		6E43261A1AF88F380004A547 /* SnowFalling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4326021AF88F380004A547 /* SnowFalling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E4326221AF88F400004A547 /* SnowFallingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC130EF1ABB0DFA008B391A /* SnowFallingView.swift */; };
 		6EC130F01ABB0DFA008B391A /* SnowFallingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC130EF1ABB0DFA008B391A /* SnowFallingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +30,42 @@
 			remoteGlobalIDString = 6E08A7FA1A8D37DD00F6093C;
 			remoteInfo = "SnowFalling-Sample";
 		};
+		6E43260E1AF88F380004A547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E08A7F31A8D37DD00F6093C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E4326011AF88F380004A547;
+			remoteInfo = SnowFalling;
+		};
+		6E4326101AF88F380004A547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E08A7F31A8D37DD00F6093C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E08A7FA1A8D37DD00F6093C;
+			remoteInfo = "SnowFalling-Sample";
+		};
+		6E4326171AF88F380004A547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E08A7F31A8D37DD00F6093C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E4326011AF88F380004A547;
+			remoteInfo = SnowFalling;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E4326201AF88F380004A547 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E43261A1AF88F380004A547 /* SnowFalling.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6E08A7FB1A8D37DD00F6093C /* SnowFalling-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnowFalling-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +78,12 @@
 		6E08A8101A8D37DD00F6093C /* SnowFalling-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnowFalling-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E08A8151A8D37DD00F6093C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E08A8161A8D37DD00F6093C /* SnowFalling_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowFalling_SampleTests.swift; sourceTree = "<group>"; };
+		6E4326021AF88F380004A547 /* SnowFalling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnowFalling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4326051AF88F380004A547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4326061AF88F380004A547 /* SnowFalling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowFalling.h; sourceTree = "<group>"; };
+		6E43260C1AF88F380004A547 /* SnowFallingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowFallingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4326141AF88F380004A547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4326151AF88F380004A547 /* SnowFallingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowFallingTests.swift; sourceTree = "<group>"; };
 		6EC130EF1ABB0DFA008B391A /* SnowFallingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnowFallingView.swift; path = ../../SnowFalling/SnowFallingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4326191AF88F380004A547 /* SnowFalling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +100,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4325FE1AF88F380004A547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4326091AF88F380004A547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E43260D1AF88F380004A547 /* SnowFalling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +126,8 @@
 			children = (
 				6E08A7FD1A8D37DD00F6093C /* SnowFalling-Sample */,
 				6E08A8131A8D37DD00F6093C /* SnowFalling-SampleTests */,
+				6E4326031AF88F380004A547 /* SnowFalling */,
+				6E4326121AF88F380004A547 /* SnowFallingTests */,
 				6E08A7FC1A8D37DD00F6093C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +137,8 @@
 			children = (
 				6E08A7FB1A8D37DD00F6093C /* SnowFalling-Sample.app */,
 				6E08A8101A8D37DD00F6093C /* SnowFalling-SampleTests.xctest */,
+				6E4326021AF88F380004A547 /* SnowFalling.framework */,
+				6E43260C1AF88F380004A547 /* SnowFallingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +182,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6E4326031AF88F380004A547 /* SnowFalling */ = {
+			isa = PBXGroup;
+			children = (
+				6E4326061AF88F380004A547 /* SnowFalling.h */,
+				6E4326041AF88F380004A547 /* Supporting Files */,
+			);
+			path = SnowFalling;
+			sourceTree = "<group>";
+		};
+		6E4326041AF88F380004A547 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4326051AF88F380004A547 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E4326121AF88F380004A547 /* SnowFallingTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E4326151AF88F380004A547 /* SnowFallingTests.swift */,
+				6E4326131AF88F380004A547 /* Supporting Files */,
+			);
+			path = SnowFallingTests;
+			sourceTree = "<group>";
+		};
+		6E4326131AF88F380004A547 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4326141AF88F380004A547 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6EC130F11ABB0DFF008B391A /* SnowFalling */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +226,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6E4325FF1AF88F380004A547 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4326071AF88F380004A547 /* SnowFalling.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6E08A7FA1A8D37DD00F6093C /* SnowFalling-Sample */ = {
 			isa = PBXNativeTarget;
@@ -133,10 +245,12 @@
 				6E08A7F71A8D37DD00F6093C /* Sources */,
 				6E08A7F81A8D37DD00F6093C /* Frameworks */,
 				6E08A7F91A8D37DD00F6093C /* Resources */,
+				6E4326201AF88F380004A547 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6E4326181AF88F380004A547 /* PBXTargetDependency */,
 			);
 			name = "SnowFalling-Sample";
 			productName = "SnowFalling-Sample";
@@ -161,6 +275,43 @@
 			productReference = 6E08A8101A8D37DD00F6093C /* SnowFalling-SampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6E4326011AF88F380004A547 /* SnowFalling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E43261F1AF88F380004A547 /* Build configuration list for PBXNativeTarget "SnowFalling" */;
+			buildPhases = (
+				6E4325FD1AF88F380004A547 /* Sources */,
+				6E4325FE1AF88F380004A547 /* Frameworks */,
+				6E4325FF1AF88F380004A547 /* Headers */,
+				6E4326001AF88F380004A547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnowFalling;
+			productName = SnowFalling;
+			productReference = 6E4326021AF88F380004A547 /* SnowFalling.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E43260B1AF88F380004A547 /* SnowFallingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4326211AF88F380004A547 /* Build configuration list for PBXNativeTarget "SnowFallingTests" */;
+			buildPhases = (
+				6E4326081AF88F380004A547 /* Sources */,
+				6E4326091AF88F380004A547 /* Frameworks */,
+				6E43260A1AF88F380004A547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E43260F1AF88F380004A547 /* PBXTargetDependency */,
+				6E4326111AF88F380004A547 /* PBXTargetDependency */,
+			);
+			name = SnowFallingTests;
+			productName = SnowFallingTests;
+			productReference = 6E43260C1AF88F380004A547 /* SnowFallingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +326,13 @@
 					};
 					6E08A80F1A8D37DD00F6093C = {
 						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 6E08A7FA1A8D37DD00F6093C;
+					};
+					6E4326011AF88F380004A547 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					6E43260B1AF88F380004A547 = {
+						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 6E08A7FA1A8D37DD00F6093C;
 					};
 				};
@@ -194,6 +352,8 @@
 			targets = (
 				6E08A7FA1A8D37DD00F6093C /* SnowFalling-Sample */,
 				6E08A80F1A8D37DD00F6093C /* SnowFalling-SampleTests */,
+				6E4326011AF88F380004A547 /* SnowFalling */,
+				6E43260B1AF88F380004A547 /* SnowFallingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +370,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6E08A80E1A8D37DD00F6093C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4326001AF88F380004A547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E43260A1AF88F380004A547 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,6 +411,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E4325FD1AF88F380004A547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4326221AF88F400004A547 /* SnowFallingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4326081AF88F380004A547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4326161AF88F380004A547 /* SnowFallingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -244,6 +434,21 @@
 			isa = PBXTargetDependency;
 			target = 6E08A7FA1A8D37DD00F6093C /* SnowFalling-Sample */;
 			targetProxy = 6E08A8111A8D37DD00F6093C /* PBXContainerItemProxy */;
+		};
+		6E43260F1AF88F380004A547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E4326011AF88F380004A547 /* SnowFalling */;
+			targetProxy = 6E43260E1AF88F380004A547 /* PBXContainerItemProxy */;
+		};
+		6E4326111AF88F380004A547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E08A7FA1A8D37DD00F6093C /* SnowFalling-Sample */;
+			targetProxy = 6E4326101AF88F380004A547 /* PBXContainerItemProxy */;
+		};
+		6E4326181AF88F380004A547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E4326011AF88F380004A547 /* SnowFalling */;
+			targetProxy = 6E4326171AF88F380004A547 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,6 +603,86 @@
 			};
 			name = Release;
 		};
+		6E43261B1AF88F380004A547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SnowFalling/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E43261C1AF88F380004A547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnowFalling/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E43261D1AF88F380004A547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SnowFallingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnowFalling-Sample.app/SnowFalling-Sample";
+			};
+			name = Debug;
+		};
+		6E43261E1AF88F380004A547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SnowFallingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnowFalling-Sample.app/SnowFalling-Sample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +712,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6E43261F1AF88F380004A547 /* Build configuration list for PBXNativeTarget "SnowFalling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E43261B1AF88F380004A547 /* Debug */,
+				6E43261C1AF88F380004A547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6E4326211AF88F380004A547 /* Build configuration list for PBXNativeTarget "SnowFallingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E43261D1AF88F380004A547 /* Debug */,
+				6E43261E1AF88F380004A547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

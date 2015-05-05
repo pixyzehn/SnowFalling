@@ -9,6 +9,8 @@ Snow Falling in Swift like a LINE for iOS on Dec 25.
 
 ##Installation
 
+###Cocoapods
+
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Add the following line to your Podfile:
 
 ```ruby
@@ -23,6 +25,34 @@ Then, run the following command:
 ```ruby
 pod install
 ```
+
+###Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate MediumMenu into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "pixyzehn/SnowFalling"
+```
+Run `carthage update`.
+
+```bash
+$ carthage update
+```
+
+###Other
+
+Add the SnowFalling (including SnowFallingView.swift) folder into your project.
+
+---
 
 Default values are as follows.
 

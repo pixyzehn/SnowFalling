@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SnowFalling"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.summary = "Snow Falling effects on UIViewController. Inspired by LINE for iOS on Dec 25."
   s.homepage = 'https://github.com/pixyzehn/SnowFalling'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
