@@ -52,13 +52,13 @@ sfv?.animationDurationMax = 12.0 // Default is 12.0
 view.addSubview(sfv!)
 ```
 
-See SnowFalling—Sample project for more information.
+See SnowFalling-Sample project for more information.
 
 ## Description
 
 In demo, If you try to tap 3 times(that is triple tap), you can change the status whether snow is falling or not.
 
-I think you cannot see a snowfall for a long time :-c
+I think you cannot see a snowfall for a long time in Tokyo:-c
 
 ## Licence
 
