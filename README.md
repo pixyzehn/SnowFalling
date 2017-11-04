@@ -1,3 +1,5 @@
+**Notice: SnowFalling is no longer being maintained/updated.**
+
 SnowFalling
 ====================
 
@@ -7,9 +9,9 @@ Snow Falling in Swift like a LINE for iOS on Dec 25.
 
 ![SnowFalling](https://github.com/pixyzehn/SnowFalling/blob/master/Assets/SnowFalling.gif)
 
-##Installation
+## Installation
 
-###Cocoapods
+### Cocoapods
 
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org/). Add the following line to your Podfile:
 
@@ -26,7 +28,7 @@ Then, run the following command:
 pod install
 ```
 
-###Carthage
+### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
 
@@ -48,7 +50,7 @@ Run `carthage update`.
 $ carthage update
 ```
 
-###Other
+### Other
 
 Add the SnowFalling (including SnowFallingView.swift) folder into your project.
 
